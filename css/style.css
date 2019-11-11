@@ -1,0 +1,231 @@
+@media screen and ( min-width:1200px )
+{
+	.inner {
+		width: 1100px;
+		margin: 0 auto;
+	}
+}
+
+body {
+	font-family: Lato;
+	background-color: #f2f2f2;
+}
+
+header {
+	top: 0;
+	left: 0;
+	height: 44px;
+	padding: 15px 0;
+	background-color: white;
+	position: fixed;
+}
+
+.header-inner {
+	position: relative;
+}
+
+
+
+header .button {
+	font-size: 12px;
+	padding: 14px 12px;
+	color: white;
+	background-color: #74cfae;
+	position: absolute;
+	top: 50%;
+	right: 0;
+	text-decoration: none;
+}
+
+header .button:hover, article .button:hover {
+	transition: .3s;
+	color: #333;
+}
+
+header, title, section, article, figure, nav, footer {
+	width: 100%;
+}
+
+.title {
+	padding: 250px 0;
+	box-sizing: border-box;
+	background-color: #f2f2f2;
+}
+.title h1 {
+	font-size: 90px;
+	font-weight: 700;
+	color: #74cfae;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.title p {
+	font-size: 30px;
+	color: #c0c0c0;
+	text-align: center;
+}
+
+section {
+	color: #fff;
+}
+
+section, footer {
+	background-color: #74cfae;
+}
+.img-iphone, li {
+	display: inline-block;
+	padding-top: 50px;
+}
+
+
+li {
+	text-align: center;
+	float: right;
+}
+
+section .theme {
+	font-size: 24px;
+	margin-bottom: 35px;
+	font-family: Raleway;
+}
+
+section p {
+	font-size: 20px;
+	color: #fff;
+	line-height: normal;
+}
+
+article .title {
+	font-size: 24px;
+	padding-top: 60px;
+	padding-bottom: 40px;
+	box-sizing: border-box;
+	color: #333;
+	text-align: center;
+	font-family: Raleway;
+}
+
+article .img-box {
+	display: inline-block;
+}
+
+article .img-box img {
+	margin-bottom: 80px;
+	margin-right: 100px;
+	cursor: pointer;
+	opacity: 0.7;
+}
+
+article .img-box img:hover {
+	opacity: 1;
+	transition: .3s ;
+}
+
+article img:nth-child(3), article img:nth-child(6) {
+	margin-right: 0;
+}
+
+article .img-box img:nth-child(n+4) {
+	margin-bottom: 90px;
+}
+
+
+article p {
+	font-size: 20px;
+	margin-right: 90px;
+	padding-bottom: 70px;
+	text-align: center;
+	line-height: normal;
+}
+
+article .button {
+	font-size: 12px;
+	padding: 14px 20px;
+	color: white;
+	background-color: #74cfae;
+	text-decoration: none;
+}
+
+article p, article .button {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.block {
+	text-align: center;
+}
+
+figure {
+	background-color: #4e4e4e;
+}
+
+.figure-inner {
+	padding-top: 70px;
+	padding-bottom: 100px;
+}
+
+figure p {
+	color: #fff;
+	text-align: center;
+	font-size: 16px;
+	margin-top: 10px;
+}
+
+figure .item {
+	display: inline-block;
+	margin-right: 180px;
+	margin-top: 50px;
+}
+
+figure .item:last-child {
+	margin-right: 0;
+}
+
+nav {
+	padding: 200px 0;
+}
+
+.nav-inner {
+	display: flex;
+	justify-content: center;
+
+}
+
+nav .fab, nav .fas {
+	font-weight: 185px;
+	width: 185px;
+	height: 150px;
+	cursor: pointer;
+	color: #74cfae;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+nav .fab:hover, nav .fas:hover {
+	transition: .3s;
+	background-color: #fff;
+}
+
+footer {
+	background-color: #74cfae;
+	padding-top: 20px;
+	padding-bottom: 25px;
+}
+
+footer p {
+	float: right;
+	color: #fff;
+}
+
+/* @media screen and ( min-width:1200px )
+{
+}
+
+@media screen and (min-width:768px) and (max-width:1199px) {
+	/*tablet用のcssを記述*/
+	}
+
+@media screen and (max-width:767px) {
+	/*スマホ用のcssを記述*/
+	} */
