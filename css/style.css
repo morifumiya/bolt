@@ -1,9 +1,18 @@
-@media screen and ( min-width:1200px )
-{
-	.inner {
-		width: 1100px;
-		margin: 0 auto;
-	}
+a {
+	display: inline-block;
+}
+
+img {
+	vertical-align: top;
+}
+
+.inner {
+	width: 1100px;
+	margin: 0 auto;
+}
+
+.section .theme, .article .title {
+	font-family: Raleway;
 }
 
 body {
@@ -11,47 +20,48 @@ body {
 	background-color: #f2f2f2;
 }
 
-header {
-	top: 0;
-	left: 0;
-	height: 44px;
-	padding: 15px 0;
-	background-color: white;
+.header {
+	background-color: #fff;
 	position: fixed;
+	width: 100%;
+	z-index: 1;
+	padding: 15px 0;
 }
 
-.header-inner {
-	position: relative;
-}
-
-
-
-header .button {
+/* 共通のbutton */
+.button {
 	font-size: 12px;
-	padding: 14px 12px;
-	color: white;
+	color: #fff;
 	background-color: #74cfae;
-	position: absolute;
-	top: 50%;
-	right: 0;
 	text-decoration: none;
 }
 
-header .button:hover, article .button:hover {
+.bolt {
+	color: #4e4e4e;
+	text-align: left;
+	font-size: 40px;
+}
+
+.header .button {
+	padding: 14px 12px;
+	float: right;
+	margin-right: 0;
+	margin-top: auto;
+}
+
+.button:hover{
 	transition: .3s;
 	color: #333;
 }
 
-header, title, section, article, figure, nav, footer {
-	width: 100%;
+.main .bolt-theme {
+	padding: 250px 0;
 }
 
-.title {
-	padding: 250px 0;
-	box-sizing: border-box;
+.title-inner {
 	background-color: #f2f2f2;
 }
-.title h1 {
+.bolt-theme h1 {
 	font-size: 90px;
 	font-weight: 700;
 	color: #74cfae;
@@ -59,103 +69,109 @@ header, title, section, article, figure, nav, footer {
 	text-align: center;
 }
 
-.title p {
+.bolt-theme p {
 	font-size: 30px;
 	color: #c0c0c0;
 	text-align: center;
 }
 
-section {
+.section {
 	color: #fff;
-}
-
-section, footer {
-	background-color: #74cfae;
-}
-.img-iphone, li {
-	display: inline-block;
 	padding-top: 50px;
 }
 
-
-li {
-	text-align: center;
-	float: right;
+.section, .footer {
+	background-color: #74cfae;
 }
 
-section .theme {
+.section-inner {
+	display: flex;
+	justify-content: space-around;
+}
+
+.iphone {
+	display: inline-flex;
+}
+
+.section-inner-block {
+	text-align: center;
+	width: 60%;
+
+}
+
+.section .theme {
 	font-size: 24px;
 	margin-bottom: 35px;
-	font-family: Raleway;
+	text-align: center;
 }
 
-section p {
+.section p {
 	font-size: 20px;
 	color: #fff;
 	line-height: normal;
+
 }
 
-article .title {
-	font-size: 24px;
+.article {
 	padding-top: 60px;
-	padding-bottom: 40px;
+	padding-bottom: 70px;
+}
+
+.article .title {
+	font-size: 24px;
+	margin-bottom: 40px;
 	box-sizing: border-box;
 	color: #333;
 	text-align: center;
-	font-family: Raleway;
 }
 
-article .img-box {
-	display: inline-block;
+.img-box {
+	font-size: 0;
 }
 
-article .img-box img {
+.article .img-box img {
 	margin-bottom: 80px;
 	margin-right: 100px;
 	cursor: pointer;
 	opacity: 0.7;
 }
 
-article .img-box img:hover {
+.article .img-box a:hover {
 	opacity: 1;
 	transition: .3s ;
 }
 
-article img:nth-child(3), article img:nth-child(6) {
+.article img:nth-child(3), .article img:nth-child(6) {
 	margin-right: 0;
 }
 
-article .img-box img:nth-child(n+4) {
+.article .img-box img:nth-child(3n) {
 	margin-bottom: 90px;
 }
 
-
-article p {
-	font-size: 20px;
+.article p {
+	font-size: 19px;
 	margin-right: 90px;
-	padding-bottom: 70px;
 	text-align: center;
 	line-height: normal;
-}
-
-article .button {
-	font-size: 12px;
-	padding: 14px 20px;
-	color: white;
-	background-color: #74cfae;
-	text-decoration: none;
-}
-
-article p, article .button {
 	display: inline-block;
-	vertical-align: top;
+	width: 50%;
 }
 
-.block {
+.article .button {
+	display: inline-block;
+	padding: 14px 20px;
+	vertical-align: top;
+	height: auto;
+}
+
+.article .block {
 	text-align: center;
 }
 
-figure {
+
+
+.figure {
 	background-color: #4e4e4e;
 }
 
@@ -164,20 +180,27 @@ figure {
 	padding-bottom: 100px;
 }
 
-figure p {
+.figure h2, .figure p {
 	color: #fff;
 	text-align: center;
 	font-size: 16px;
 	margin-top: 10px;
 }
 
-figure .item {
-	display: inline-block;
-	margin-right: 180px;
-	margin-top: 50px;
+figure .our {
+	margin-bottom: 50px;
 }
 
-figure .item:last-child {
+.item-box {
+	text-align: center;
+}
+
+.figure .item {
+	display: inline-block;
+	margin-right: 180px;
+}
+
+.figure .item:last-child {
 	margin-right: 0;
 }
 
@@ -191,10 +214,9 @@ nav {
 
 }
 
-nav .fab, nav .fas {
+nav .icon {
 	font-weight: 185px;
 	width: 185px;
-	height: 150px;
 	cursor: pointer;
 	color: #74cfae;
 	display: flex;
@@ -202,30 +224,28 @@ nav .fab, nav .fas {
 	align-items: center;
 }
 
-nav .fab:hover, nav .fas:hover {
+nav .icon:hover {
 	transition: .3s;
 	background-color: #fff;
 }
 
-footer {
+.footer {
 	background-color: #74cfae;
 	padding-top: 20px;
 	padding-bottom: 25px;
 }
 
-footer p {
-	float: right;
+.footer p {
+	text-align: right;
 	color: #fff;
 }
 
-/* @media screen and ( min-width:1200px )
-{
-}
-
-@media screen and (min-width:768px) and (max-width:1199px) {
+/* @media screen and ( min-width:1200px ) */
+/* { */
+/* } */
+/* @media screen and (min-width:768px) and (max-width:1199px) { */
 	/*tablet用のcssを記述*/
-	}
-
-@media screen and (max-width:767px) {
+/* } */
+/* @media screen and (max-width:767px) { */
 	/*スマホ用のcssを記述*/
-	} */
+/* } */
