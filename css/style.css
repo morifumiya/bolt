@@ -42,12 +42,37 @@ body {
 	font-size: 40px;
 }
 
-.header .button {
-	padding: 14px 12px;
-	float: right;
-	margin-right: 0;
-	margin-top: auto;
+/* PCとtab用のcssを記述 */
+@media screen and (min-width:768px) and (min-width:1200px) {
+	.header .button {
+		padding: 14px 12px;
+		float: right;
+		margin-right: 0;
+		margin-top: auto;
+	}
+	.header .nav {
+		display: none;
+	}
 }
+
+/* スマホ用のcssを記述 */
+@media screen and (max-width:767px) {
+	.header .nav {
+		padding: 10px;
+		border: 1px solid #ddd;
+		border-radius: 4px;
+		float: right;
+		margin-right: 0;
+		margin-top: auto;
+	}
+	.header .button {
+		display: none;
+	}
+}
+
+
+
+
 
 .button:hover{
 	transition: .3s;
@@ -79,46 +104,46 @@ body {
 	text-align: center;
 }
 
-.section {
+.news {
 	color: #fff;
 	padding-top: 50px;
 }
 
-.section, .footer {
+.news, .footer {
 	background-color: #74cfae;
 }
 
-.section-inner {
+.news-inner {
 	display: flex;
 	justify-content: space-around;
 }
 
 
-.section-inner-block {
+.news-inner-block {
 	text-align: center;
 	width: 60%;
 
 }
 
-.section .theme {
+.news .theme {
 	font-size: 24px;
 	margin-bottom: 35px;
 	text-align: center;
 }
 
-.section p {
+.news p {
 	font-size: 20px;
 	color: #fff;
 	line-height: normal;
 
 }
 
-.article {
+.list {
 	padding-top: 60px;
 	padding-bottom: 70px;
 }
 
-.article .title {
+.list .title {
 	font-size: 24px;
 	margin-bottom: 40px;
 	color: #333;
@@ -129,26 +154,26 @@ body {
 	font-size: 0;
 }
 
-.article .a-img {
+.list .a-img {
 	margin-bottom: 80px;
 	margin-right: 100px;
 	opacity: 0.7;
 }
 
-.article .a-img:hover {
+.list .a-img:hover {
 	transition: .3s ;
 	opacity: 1;
 }
 
-.article .a-img:nth-child(3), .article .a-img:nth-child(6) {
+.list .a-img:nth-child(3), .list .a-img:nth-child(6) {
 	margin-right: 0;
 }
 
-.article .a-img:nth-child(3n) {
+.list .a-img:nth-child(3n) {
 	margin-bottom: 90px;
 }
 
-.article p {
+.list p {
 	font-size: 19px;
 	margin-right: 90px;
 	text-align: center;
@@ -157,14 +182,14 @@ body {
 	width: 50%;
 }
 
-.article .button {
+.list .button {
 	display: inline-block;
 	padding: 14px 20px;
 	vertical-align: top;
 	height: auto;
 }
 
-.article .block {
+.list .block {
 	text-align: center;
 }
 
@@ -243,12 +268,13 @@ nav .icon:hover {
 	color: #fff;
 }
 
-/* @media screen and ( min-width:1200px ) */
-/* { */
-/* } */
 /* @media screen and (min-width:768px) and (max-width:1199px) { */
 	/*tablet用のcssを記述*/
 /* } */
 /* @media screen and (max-width:767px) { */
-	/*スマホ用のcssを記述*/
+	/* スマホ用のcssを記述 */
 /* } */
+
+/* PC	1200px - */
+/* TAB	768px - 1199px */
+/* SP	- 767px */
