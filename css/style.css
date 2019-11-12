@@ -54,6 +54,10 @@ body {
 	color: #333;
 }
 
+.main {
+	padding-top: 70px;
+}
+
 .main .bolt-theme {
 	padding: 250px 0;
 }
@@ -89,9 +93,6 @@ body {
 	justify-content: space-around;
 }
 
-.iphone {
-	display: inline-flex;
-}
 
 .section-inner-block {
 	text-align: center;
@@ -120,7 +121,6 @@ body {
 .article .title {
 	font-size: 24px;
 	margin-bottom: 40px;
-	box-sizing: border-box;
 	color: #333;
 	text-align: center;
 }
@@ -129,23 +129,22 @@ body {
 	font-size: 0;
 }
 
-.article .img-box img {
+.article .a-img {
 	margin-bottom: 80px;
 	margin-right: 100px;
-	cursor: pointer;
 	opacity: 0.7;
 }
 
-.article .img-box a:hover {
-	opacity: 1;
+.article .a-img:hover {
 	transition: .3s ;
+	opacity: 1;
 }
 
-.article img:nth-child(3), .article img:nth-child(6) {
+.article .a-img:nth-child(3), .article .a-img:nth-child(6) {
 	margin-right: 0;
 }
 
-.article .img-box img:nth-child(3n) {
+.article .a-img:nth-child(3n) {
 	margin-bottom: 90px;
 }
 
@@ -184,10 +183,9 @@ body {
 	color: #fff;
 	text-align: center;
 	font-size: 16px;
-	margin-top: 10px;
 }
 
-figure .our {
+.figure .our {
 	margin-bottom: 50px;
 }
 
@@ -204,6 +202,10 @@ figure .our {
 	margin-right: 0;
 }
 
+.figure p {
+	padding-top: 15px;
+}
+
 nav {
 	padding: 200px 0;
 }
@@ -217,11 +219,12 @@ nav {
 nav .icon {
 	font-weight: 185px;
 	width: 185px;
-	cursor: pointer;
 	color: #74cfae;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	padding: 50px 0;
+	text-decoration: none;
 }
 
 nav .icon:hover {
