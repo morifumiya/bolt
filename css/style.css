@@ -11,16 +11,13 @@ img {
 	margin: 0 auto;
 }
 
-.theme, .title, .our-skills {
+.font-title {
 	font-family: Raleway;
-}
-
-.bolt-theme, .bolt-text, .news-text, .our-text, .item-text, .crafted {
-	font-family: Lato;
 }
 
 body {
 	background-color: #f2f2f2;
+	font-family: Lato;
 }
 
 .header {
@@ -37,6 +34,7 @@ body {
 	color: #fff;
 	background-color: #74cfae;
 	text-decoration: none;
+	transition: .3s;
 }
 
 .bolt {
@@ -78,7 +76,6 @@ body {
 
 
 .button:hover{
-	transition: .3s;
 	color: #333;
 }
 
@@ -93,7 +90,7 @@ body {
 .title-inner {
 	background-color: #f2f2f2;
 }
-.bolt-theme .bolt {
+.bolt-theme .bolt-title {
 	font-size: 90px;
 	font-weight: 700;
 	color: #74cfae;
@@ -156,14 +153,14 @@ body {
 }
 
 .list .a-img {
-	margin-bottom: 80px;
+	margin-top: 80px;
 	margin-right: 100px;
 	opacity: 0.7;
 	transition: .3s ;
 }
 
-.list .a-img:nth-child(n + 3) {
-	margin-bottom: 0;
+.list .a-img:nth-of-type(-n+3) {
+	margin-top: 0;
 }
 
 .list .a-img:hover {
@@ -242,10 +239,10 @@ body {
 	color: #74cfae;
 	padding: 50px 0;
 	text-decoration: none;
+	transition: .3s;
 }
 
 .icon-block .icon:hover {
-	transition: .3s;
 	background-color: #fff;
 }
 
