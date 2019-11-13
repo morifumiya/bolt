@@ -58,14 +58,14 @@ body {
 	padding-top: 70px;
 }
 
-.main .bolt-theme {
+.main .bolt {
 	padding: 250px 0;
 }
 
-.title-inner {
+.bolt-inner {
 	background-color: #f2f2f2;
 }
-.bolt-theme .bolt-title {
+.bolt .bolt-theme {
 	font-size: 90px;
 	font-weight: 700;
 	color: #74cfae;
@@ -73,7 +73,7 @@ body {
 	text-align: center;
 }
 
-.bolt-theme .bolt-text {
+.bolt .bolt-text {
 	font-size: 30px;
 	color: #c0c0c0;
 	text-align: center;
@@ -96,12 +96,13 @@ body {
 .news-inner-block {
 	text-align: center;
 	width: 60%;
+	margin-top: 35px;
 }
 
-.news .theme {
+.news .font-title {
 	font-size: 24px;
-	margin: 20px 0 35px;
 	text-align: center;
+	margin-bottom: 20px;
 }
 
 .news .news-text {
@@ -121,7 +122,7 @@ body {
 	text-align: center;
 }
 
-.img-box {
+.list .img-box {
 	font-size: 0;
 	margin-bottom: 90px;
 }
@@ -246,19 +247,9 @@ body {
 		width: 97%;
 	}
 
-	.header .nav {
-		padding: 10px;
-		border: 1px solid #ddd;
-		border-radius: 4px;
-		float: right;
-		margin-right: 0;
-		margin-top: auto;
-	}
-
-	.main .bolt-title {
+	.bolt .bolt-theme {
 		font-size: 80px;
 		margin-bottom: 20px;
-		text-align: center;
 	}
 
 	.news-inner {
@@ -267,22 +258,17 @@ body {
 	}
 
 	.news-inner-block {
-		margin: 0 auto;
 		width: 100%;
-	}
-
-	.news-text {
 	}
 
 	/* 画像 * 6 */
 	.list {
 		display: block;
 		text-align: center;
-		margin: 0 auto;
 	}
 
 	.list .img-box {
-		margin-bottom: 0;
+		margin-bottom: 80px;
 	}
 
 	.list .a-img {
@@ -297,17 +283,15 @@ body {
 		margin-right: auto;
 	}
 
-	.block .our-text {
-		margin: 80px auto 40px;
+	.list .our-text {
 		display: block;
-		text-align: center;
 		width: 100%;
+		margin-bottom: 40px;
 	}
 
 /* 円 */
 	.figure .item-box {
 		display: block;
-		margin: 0 auto;
 	}
 
 	.figure .item {
@@ -319,6 +303,12 @@ body {
 	.figure .item:first-child {
 		margin-top: 0;
 	}
+
+/* sns */
+	.icon-block .icon {
+		width: 25%;
+	}
+
 }
 
 /* スマホ用のcssを記述 */
@@ -327,31 +317,33 @@ body {
 		display: none;
 	}
 
+	.header .nav {
+		padding: 10px;
+		border: 1px solid #ddd;
+		color: #333;
+		border-radius: 4px;
+		float: right;
+		margin-right: 0;
+		margin-top: auto;
+	}
+
+	/* bolt theme */
+	.main .bolt {
+		padding: 160px 0 130px;
+	}
+
 /* sns */
 	.icon-block .icon-box {
 		display: block;
-		text-align: center;
-		margin: 0 auto;
 	}
 
 	.icon-block {
-		padding: 50px 15px;
-	}
-
-	.icon-block .icon:hover {
-		background-color: #fff;
+		padding: 50px 0;
 	}
 
 	.icon-block .icon {
-		margin: 0 auto;
 		display: block;
 		text-align: center;
 		width: 100%;
 	}
-
 }
-/* tab用のcssを記述 */
-/* @media screen and (max-width:1199px) {
-	body {
-		width: 100%;
-	}
