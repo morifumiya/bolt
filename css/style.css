@@ -283,6 +283,11 @@ body {
 		margin-right: auto;
 	}
 
+	.list .a-img:last-child {
+		margin-bottom: 0;
+	}
+	
+
 	.list .our-text {
 		display: block;
 		width: 100%;
