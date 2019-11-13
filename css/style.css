@@ -11,7 +11,7 @@ img {
 	margin: 0 auto;
 }
 
-.font-title {
+.font-Raleway {
 	font-family: Raleway;
 }
 
@@ -43,37 +43,12 @@ body {
 	font-size: 40px;
 }
 
-/* PCとtab用のcssを記述 */
-@media screen and (min-width:768px) and (min-width:1200px) {
-	.header .button {
-		padding: 14px 12px;
-		float: right;
-		margin-right: 0;
-		margin-top: auto;
-	}
-	.header .nav {
-		display: none;
-	}
+.header .button {
+	padding: 14px 12px;
+	float: right;
+	margin-right: 0;
+	margin-top: auto;
 }
-
-/* スマホ用のcssを記述 */
-@media screen and (max-width:767px) {
-	.header .nav {
-		padding: 10px;
-		border: 1px solid #ddd;
-		border-radius: 4px;
-		float: right;
-		margin-right: 0;
-		margin-top: auto;
-	}
-	.header .button {
-		display: none;
-	}
-}
-
-
-
-
 
 .button:hover{
 	color: #333;
@@ -106,7 +81,7 @@ body {
 
 .news {
 	color: #fff;
-	padding-top: 50px;
+	padding: 50px 0 25px;
 }
 
 .news, .finish {
@@ -125,7 +100,7 @@ body {
 
 .news .theme {
 	font-size: 24px;
-	margin-bottom: 35px;
+	margin: 20px 0 35px;
 	text-align: center;
 }
 
@@ -136,8 +111,7 @@ body {
 }
 
 .list {
-	padding-top: 60px;
-	padding-bottom: 70px;
+	padding: 60px 0 70px;
 }
 
 .list .title {
@@ -159,7 +133,7 @@ body {
 	transition: .3s ;
 }
 
-.list .a-img:nth-of-type(-n+3) {
+.list .a-img:nth-child(-n+3) {
 	margin-top: 0;
 }
 
@@ -193,8 +167,7 @@ body {
 
 .figure {
 	background-color: #4e4e4e;
-	padding-top: 70px;
-	padding-bottom: 100px;
+	padding: 70px 0 100px;
 }
 
 .figure .our-skills, .figure .item-text {
@@ -248,8 +221,7 @@ body {
 
 .finish {
 	background-color: #74cfae;
-	padding-top: 20px;
-	padding-bottom: 25px;
+	padding: 20px 0 25px 0;
 }
 
 .finish .crafted {
@@ -257,13 +229,129 @@ body {
 	color: #fff;
 }
 
-/* @media screen and (min-width:768px) and (max-width:1199px) { */
-	/*tablet用のcssを記述*/
-/* } */
-/* @media screen and (max-width:767px) { */
-	/* スマホ用のcssを記述 */
-/* } */
-
 /* PC	1200px - */
 /* TAB	768px - 1199px */
 /* SP	- 767px */
+
+/* tab用(min)とpc用のcssを記述 */
+@media screen and (min-width:768px) {
+	.header .nav {
+		display: none;
+	}
+}
+
+/* tab用(max)とスマホ用のcssを記述 */
+@media screen and (max-width:1199px) {
+	.inner {
+		width: 97%;
+	}
+
+	.header .nav {
+		padding: 10px;
+		border: 1px solid #ddd;
+		border-radius: 4px;
+		float: right;
+		margin-right: 0;
+		margin-top: auto;
+	}
+
+	.main .bolt-title {
+		font-size: 80px;
+		margin-bottom: 20px;
+		text-align: center;
+	}
+
+	.news-inner {
+		display: block;
+		text-align: center;
+	}
+
+	.news-inner-block {
+		margin: 0 auto;
+		width: 100%;
+	}
+
+	.news-text {
+	}
+
+	/* 画像 * 6 */
+	.list {
+		display: block;
+		text-align: center;
+		margin: 0 auto;
+	}
+
+	.list .img-box {
+		margin-bottom: 0;
+	}
+
+	.list .a-img {
+		margin: 0 auto;
+		display: block;
+		text-align: center;
+		width: 300px;
+	}
+
+	.list .a-img:nth-child(3n){
+		margin-bottom: 80px;
+		margin-right: auto;
+	}
+
+	.block .our-text {
+		margin: 80px auto 40px;
+		display: block;
+		text-align: center;
+		width: 100%;
+	}
+
+/* 円 */
+	.figure .item-box {
+		display: block;
+		margin: 0 auto;
+	}
+
+	.figure .item {
+		margin: 88px auto 0;
+		display: block;
+		text-align: center;
+	}
+
+	.figure .item:first-child {
+		margin-top: 0;
+	}
+}
+
+/* スマホ用のcssを記述 */
+@media screen and (max-width:767px) {
+	.header .button {
+		display: none;
+	}
+
+/* sns */
+	.icon-block .icon-box {
+		display: block;
+		text-align: center;
+		margin: 0 auto;
+	}
+
+	.icon-block {
+		padding: 50px 15px;
+	}
+
+	.icon-block .icon:hover {
+		background-color: #fff;
+	}
+
+	.icon-block .icon {
+		margin: 0 auto;
+		display: block;
+		text-align: center;
+		width: 100%;
+	}
+
+}
+/* tab用のcssを記述 */
+/* @media screen and (max-width:1199px) {
+	body {
+		width: 100%;
+	}
